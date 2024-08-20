@@ -94,16 +94,20 @@ body{
 	color: aliceblue;
 	background: crimson;
 }
-#biryani #item-cart, #paneer #item-cart{
-	
- }
-#egg-role #item-cart, #sweets #item-cart{
+#Biryani, #south-indian, #vegitable, #paneer, #paratha, #chinies, #tandori{
+	margin:40px;
+} 
 
- } 
-#bread #item-cart, #idli #item-cart{
+#Biryani #item-cart, #south-indian #item-cart{ 
 
- }
- #sandwitch #item-cart{
+}
+#vegitable #item-cart, #paneer #item-cart{
+
+}
+#paratha #item-cart, #chinies #item-cart{
+
+}
+#tandori #item-cart{
 
 }
 #catogary-name, .menu-item{
@@ -120,7 +124,7 @@ color: coral;
 	border-radius: 5px;
 	background-color: rgb(253, 221,226);
 	cursor: pointer;
-	transition: 0.5s,all ease-in-out;
+	transition: 0.5s all ease-in-out;
 }
 #card-top{
 	display: flex;
@@ -145,18 +149,23 @@ color: coral;
 	color: white;
 }
 #item-cart img{
-	width: 120px;
-	height:120px;
+	width: 100px;
+	height:100px;
 	border-radius: 50%;
 	margin:auto;
 	display:block;
-	margin-bottom:15px;
+	margin-bottom: 15px;
 	transition: 0.5s all ease-in-out;
 }
 #item-cart:hover img{
 	transform: scale(1.2);
 }
-
+#item-price{
+	margin: 0px;
+	color: rgb(2, 27, 27);
+	font-weight: 500;
+	font-size: 18px;
+}
 #cart{
 	background: lavender;
 }
