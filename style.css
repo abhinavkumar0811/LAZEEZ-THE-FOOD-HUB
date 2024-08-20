@@ -79,7 +79,7 @@ body{
 	font-size: 20px;
 }
 #food-item{
-
+display: none;
 }
 .util i, .user i {
 	font-size: 18px;
@@ -165,7 +165,64 @@ color: coral;
 	color: rgb(2, 27, 27);
 	font-weight: 500;
 	font-size: 18px;
-}
+} 
+                                    /* cart section*/
 #cart{
-	background: lavender;
+	background: whitesmoke;
+	padding-right: 30px;
+	overflow-y: scroll;
+}
+.taste-header{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	position: sticky;
+	top: 0;
+	background: whitesmoke;
+}
+.menu-item{
+	padding: px;
+	margin: 0;
+	font-size: 30px;
+	margin-top: 40px;
+	color: indianred;
+	background: whitesmokes;
+}
+
+.border{
+	width: 80px;
+	height: 4px;
+	margin: 3px 0;
+	margin-bottom: 30px;
+	border-radius: 2px;
+	background: coral;
+
+}
+.list-cart{
+
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: 1s all ease-in-out;
+}
+.list-cart:hover{
+background: rgb(255, 216, 222);
+}
+.list-cart img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.list-cart:hover img{
+transition: 0.5s all ease-in-out;
+transform: scale(0.9);
+}
+
+.list-name{
+	font-size: 20px;
+	margin: 0 10px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color:rgb(94, 43, 43);
 }
