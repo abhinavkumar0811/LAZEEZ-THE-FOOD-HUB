@@ -75,11 +75,15 @@ body{
 	text-overflow: ellipsis;
 	cursor: pointer;
 }
+
+.your-address:active{
+	color: white;
+	background: crimson;
+}
 .add-box i{
 	font-size: 20px;
 }
 #food-item{
-display: none;
 }
 .util i, .user i {
 	font-size: 18px;
@@ -90,7 +94,7 @@ display: none;
 	border-radius: 20px;
 	cursor: pointer;
 }
-.util i:hover{
+.util i:active,.user i:active{
 	color: aliceblue;
 	background: crimson;
 }
@@ -98,7 +102,7 @@ display: none;
 	margin:40px;
 } 
 
-#Biryani #item-cart, #south-indian #item-cart{ 
+/*#Biryani #item-cart, #south-indian #item-cart{ 
 
 }
 #vegitable #item-cart, #paneer #item-cart{
@@ -109,7 +113,7 @@ display: none;
 }
 #tandori #item-cart{
 
-}
+}*/
 #catogary-name, .menu-item{
 margin: 10px;
 font-size: 35px;
@@ -225,4 +229,89 @@ transform: scale(0.9);
 	text-decoration: none;
 	text-transform: capitalize;
 	color:rgb(94, 43, 43);
+}
+#catogary-list{
+}
+#cheackuot{
+	text-align: center;
+	margin: 40px auto;
+	border-radius: 5px auto;
+	background: white;
+	padding: 10px 20px;
+}
+#cheackuot p{
+	margin: 15px 0;
+	float: left;
+}
+#total-price,#total-item{
+	font-size: 25px;
+	color: indianred;
+}
+#cart-btn{
+	outline: none;
+	border: none;
+	color: white;
+	background: crimson;
+	border-radius: 25px;
+	padding: 10px 25px;
+	font-size: 18px;
+	text-transform: uppercase;
+	bottom: 30px;
+	margin: 15px 0;
+	cursor: pointer;
+}
+#cart-btn:active{
+color: crimson;
+background: none;
+border: 1px solid crimson;
+}
+#delivery{
+	font-size: 20px;
+	color: limegreen;
+}
+                    /* cart page design */
+#cart-page{
+	background:white;
+	margin: 40px 10px;
+	margin-right: 50px;
+	padding: 20px 30px;
+	padding-bottom: 30px;
+	position: relative;
+}
+#card-title{
+	font-size: 35px;
+	margin: 0;
+	color: indianred;
+}
+#m-total-amount{
+	display: none;
+}
+#cart-page table{
+	width: 100%;
+	margin: 20px;
+	text-align: center;
+}
+#cart-page table thead td{
+font-size: 25px;
+padding-bottom: 10px;
+}
+#cart-page table tbody td{
+	padding: 10px 0;
+	font-size: 20px;
+}
+#cart-page table tbody button{
+	outline: none;
+	border: none;
+	background: none;
+	background: lightcoral;
+	color: white;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 0 5px;
+	padding: 3px 8px;
+}
+#cart-page table tbody img{
+	width: 70px;
+	height: 75px;
+	border-radius: 50px;
 }
