@@ -1,69 +1,316 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-  }
-  
-  .navbar-nav {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav-item {
-    margin-right: 20px;
-  }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .navbar-toggler {
-    background-color: #333;
-    border: none;
-    padding: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .navbar-toggler-icon {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: #fff;
-    margin: 5px 0;
-    transition: transform 0.5s;
-  }
-  
-  .navbar-toggler-icon:nth-child(2) {
-    width: 15px;
-  }
-  
-  .navbar-toggler-icon:nth-child(3) {
-    width: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-nav {
-      display: none;
-    }
-    .navbar-toggler {
-      display: block;
-    }
-  }
-  
-  @media (min-width: 769px) {
-    .navbar-toggler {
-      display: none;
-    }
-  }
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+.container{
+	display: grid;
+	grid-template-columns: 250px 1fr 300px;
+	height: 100%;
+	overflow: hidden;
+}
+/*designing menu box*/
+#menu{
+	background-color: whitesmoke;
+}
+.brand-logo{
+	padding: 0 30px;
+}
+.brand-logo img{
+	width: 150px;
+	height: 150px;
+	margin-top: 5px;
+}
+.menu-item a{
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 8px 30px;
+	margin: 12px 0 ;
+	color: rgb(128, 128, 129);
+	 font-weight: 700;
+}
+.menu-item a:hover{
+	background-color: rgb(204, 182, 113);
+}
+
+#food-container{
+	background:whitesmoke;
+	overflow: scroll;
+	overflow-x: hidden;
+	box-sizing: content-box;
+}
+#header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	top: 0;
+	position: sticky;
+	background: whitesmoke;
+	z-index: 1;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+#header.address{
+	font-size: 20px;
+}
+
+.your-address{
+	border: 1px solid indianred;
+	color: indianred;
+	padding: 5px 10px;
+	border-radius: 5px;
+	width: 150px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+
+.your-address:active{
+	color: white;
+	background: crimson;
+}
+.add-box i{
+	font-size: 20px;
+}
+#food-item{
+}
+.util i, .user i {
+	font-size: 18px;
+	margin: 0 18px;
+	border: 2px solid crimson;
+	padding: 8px 16px;
+	color: crimson;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.util i:active,.user i:active{
+	color: aliceblue;
+	background: crimson;
+}
+#south-indian, #vegitable, #paneer, #paratha, #chinies, #tandori{
+}
+
+/*#Biryani #item-cart, #south-indian #item-cart{ 
+
+}
+#vegitable #item-cart, #paneer #item-cart{
+
+}
+#paratha #item-cart, #chinies #item-cart{
+
+}
+#tandori #item-cart{
+
+}*/
+#catogary-name, .menu-item{
+margin: 10px;
+font-size: 35px;
+color: coral;
+}
+#item-cart{
+	width: 188px;
+	height: 220px;
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: rgb(253, 221,226);
+	cursor: pointer;
+	transition: 0.5s all ease-in-out;
+}
+#card-top{
+	display: flex;
+	margin: 5px 0;
+	justify-content: space-between;
+}
+#rating{
+	padding: 7px;
+	color: goldenrod;
+	background: rgb(51, 140, 95);
+	font-size: 14px;
+	border-radius: 14px;
+}
+.fa-heart-o {
+	padding: 6px;
+    background: white;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.toggle-heart{
+	background: orangered;
+	color: white;
+}
+#item-cart img{
+	width: 100px;
+	height:100px;
+	border-radius: 50%;
+	margin:auto;
+	display:block;
+	margin-bottom: 15px;
+	transition: 0.5s all ease-in-out;
+}
+#item-cart:hover img{
+	transform: scale(1.2);
+}
+#item-price{
+	margin: 0px;
+	color: rgb(2, 27, 27);
+	font-weight: 500;
+	font-size: 18px;
+} 
+                                    /* cart section*/
+#cart{
+	background: whitesmoke;
+	padding-right: 30px;
+	overflow-y: scroll;
+}
+.taste-header{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	position: sticky;
+	top: 0;
+	background: whitesmoke;
+}
+.menu-item{
+	padding: px;
+	margin: 0;
+	font-size: 30px;
+	margin-top: 40px;
+	color: indianred;
+	background: whitesmokes;
+}
+
+.border{
+	width: 80px;
+	height: 4px;
+	margin: 3px 0;
+	margin-bottom: 30px;
+	border-radius: 2px;
+	background: coral;
+
+}
+.list-cart{
+
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: 1s all ease-in-out;
+}
+.list-cart:hover{
+background: rgb(255, 216, 222);
+}
+.list-cart img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.list-cart:hover img{
+transition: 0.5s all ease-in-out;
+transform: scale(0.9);
+}
+
+.list-name{
+	font-size: 20px;
+	margin: 0 10px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color:rgb(94, 43, 43);
+}
+#catogary-list{
+}
+#cheackuot{
+	text-align: center;
+	margin: 40px auto;
+	border-radius: 5px auto;
+	background: white;
+	padding: 10px 20px;
+}
+#cheackuot p{
+	margin: 15px 0;
+	float: left;
+}
+#total-price,#total-item{
+	font-size: 25px;
+	color: indianred;
+}
+#cart-btn{
+	outline: none;
+	border: none;
+	color: white;
+	background: crimson;
+	border-radius: 25px;
+	padding: 10px 25px;
+	font-size: 18px;
+	text-transform: uppercase;
+	bottom: 30px;
+	margin: 15px 0;
+	cursor: pointer;
+}
+#cart-btn:active{
+color: crimson;
+background: none;
+border: 1px solid crimson;
+}
+#delivery{
+	font-size: 20px;
+	color: limegreen;
+}
+                    /* cart page design */
+#cart-page{
+	background:white;
+	margin: 40px 10px;
+	margin-right: 50px;
+	padding: 20px 30px;
+	padding-bottom: 30px;
+	position: relative;
+}
+#card-title{
+	font-size: 35px;
+	margin: 0;
+	color: indianred;
+}
+#m-total-amount{
+	display: none;
+}
+#cart-page table{
+	width: 100%;
+	margin: 20px;
+	text-align: center;
+}
+#cart-page table thead td{
+font-size: 25px;
+padding-bottom: 10px;
+}
+#cart-page table tbody td{
+	padding: 10px 0;
+	font-size: 20px;
+}
+#cart-page table tbody button{
+	outline: none;
+	border: none;
+	background: none;
+	background: lightcoral;
+	color: white;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 0 5px;
+	padding: 3px 8px;
+}
+#cart-page table tbody img{
+	width: 70px;
+	height: 75px;
+	border-radius: 50px;
+}
