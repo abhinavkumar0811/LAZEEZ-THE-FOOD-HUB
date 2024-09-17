@@ -98,9 +98,8 @@ body{
 	color: aliceblue;
 	background: crimson;
 }
-#Biryani, #south-indian, #vegitable, #paneer, #paratha, #chinies, #tandori{
-	margin:40px;
-} 
+#south-indian, #vegitable, #paneer, #paratha, #chinies, #tandori{
+}
 
 /*#Biryani #item-cart, #south-indian #item-cart{ 
 

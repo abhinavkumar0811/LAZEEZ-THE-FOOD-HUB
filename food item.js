@@ -4,7 +4,7 @@ const foodItem= [
     name: 'Ambur Biryani',
     category : 'biryani',
     rating : 4.3,
-    price: 13,
+    price: 99,
     img: 'images/biryani/Ambur-Chicken-Biryani.jpg',
     quantity: 1
 },
@@ -13,8 +13,8 @@ const foodItem= [
     name: 'Hyderabadi Biryani',
     category : 'biryani',
     rating : 4.3,
-    price: 15,
-    img: 'images/biryani/Chicken-Biryani-hyd.jpg',
+    price: 149,
+    img: 'https://images.pexels.com/photos/14731639/pexels-photo-14731639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     quantity: 1
 },
 {
@@ -22,8 +22,8 @@ const foodItem= [
     name: 'Egg Biryani',
     category : 'biryani',
     rating : 4.3,
-    price: 18,
-    img: 'images/biryani/egg-biryani.jpeg',
+    price: 99,
+    img: 'https://images.pexels.com/photos/9609853/pexels-photo-9609853.jpeg',
     quantity: 1
 },
 {
@@ -31,8 +31,8 @@ const foodItem= [
     name: 'Goan Fish Biryani',
     category : 'biryani',
     rating : 4.3,
-    price: 15,
-    img: 'images/biryani/goan-fish-biryani.jpg',
+    price: 199,
+    img: 'https://images.pexels.com/photos/27672770/pexels-photo-27672770/free-photo-of-a-plate-with-salmon-and-rice-on-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     quantity: 1
 },
 {
@@ -40,59 +40,59 @@ const foodItem= [
     name: 'Mutton Biryani',
     category : 'biryani',
     rating : 4.3,
-    price: 10,
-    img: 'images/biryani/hyd-Mutton-Biryani.jpg',
+    price: 299,
+    img: 'https://images.pexels.com/photos/7394819/pexels-photo-7394819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     quantity: 1
 },
 {
     id: 6,
-    name: 'Kamrupi Biryani',
-    category : 'biryani',
+    name: 'paneer tikka',
+    category : 'vegitable',
     rating : 4.3,
-    price: 12,
-    img: 'images/biryani/kamrupi-biryani.jpg',
+    price: 99,
+    img: 'https://images.pexels.com/photos/3928854/pexels-photo-3928854.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     quantity: 1
 },
 {
     id: 7,
-    name: 'Kashmiri Biryani',
-    category : 'biryani',
+    name: 'paneer masala',
+    category : 'vegitable',
     rating : 4.3,
-    price: 13,
-    img: 'images/biryani/kashmiri.pulao.jpg',
+    price: 440,
+    img: 'https://images.pexels.com/photos/9609835/pexels-photo-9609835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     quantity: 1
 },
 {
     id: 8,
-    name: 'Memoni Biryani',
-    category : 'biryani',
+    name: 'paneer curry',
+    category : 'vegitable',
     rating : 4.3,
-    price: 20,
-    img: 'images/biryani/memonibiryani.png',
+    price: 199,
+    img: 'https://images.pexels.com/photos/9609838/pexels-photo-9609838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     quantity: 1
 },
 {
     id: 9,
-    name: 'Mughlai Biryani',
-    category : 'biryani',
+    name: 'paneer mashala',
+    category : 'vegitable',
     rating : 4.3,
-    price: 15,
-    img: 'images/biryani/mughlai-biryani.jpg',
+    price: 201,
+    img: 'https://images.pexels.com/photos/9609835/pexels-photo-9609835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     quantity: 1
 },
 {
     id: 10,
-    name: 'Chicken Roast',
-    category : 'chicken',
+    name: 'paneer orange soup',
+    category : 'vegitable',
     rating : 4.3,
-    price: 11,
-    img: 'images/chicken/Chicken_roast.jpg',
+    price: 199,
+    img: 'https://images.pexels.com/photos/10345736/pexels-photo-10345736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     quantity: 1
 },
 {
     id: 11,
-    name: 'Chicken Curry',
-    category : 'chicken',
+    name: '',
+    category : 'vegitable',
     rating : 4.3,
     price: 10,
     img: 'images/chicken/Chicken-Curry.jpg',
@@ -101,7 +101,7 @@ const foodItem= [
 {
     id: 12,
     name: 'Chicken Do Pyaza',
-    category : 'chicken',
+    category : 'vegitable',
     rating : 4.3,
     price: 14,
     img: 'images/chicken/Chicken-do-Pyaza.jpg',
@@ -110,7 +110,7 @@ const foodItem= [
 {
     id: 13,
     name: 'Chicken Masala',
-    category : 'chicken',
+    category : 'vegitable',
     rating : 4.3,
     price: 12,
     img: 'images/chicken/Chicken-Masala.jpeg',
