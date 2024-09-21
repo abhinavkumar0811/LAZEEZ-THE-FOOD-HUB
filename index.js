@@ -47,46 +47,47 @@ function displayItems(){
                         
                                 console.log(tandoriData);
                     
-                                BiryaniData.map(item=>{
-        
-                                    var itemcart= Document.createElement('div');
-                                    itemCart.setAttribute('id',item-cart);
-                                    
-                                    var cardtop= document.createElement('div');
-                                    cardtop.setAttribute('id',card-top);
+                             BiryaniData.map(Item=>{
+                              var itemCart= document.createElement('div');
+                              itemCart.setAttribute('id', 'item-cart');
 
-                                    var star= document.createElement('div');
-                                        star.setAttribute('class','fa-star');
-                                        star.setAttribute('id','rating');
-                                        star.innerText=''+item.rating;
+                              var itemTop=document.createElement('div');
+                              itemTop.setAttribute('id','card-top');
 
-                                        var star= document.createElement('div');
-                                        heart.setAttribute('class','fa fa-heart-o add-to-cart');
-                                        heart.setAttribute('id','item.id');
+                              var star= document.createElement('i');
+                              star.setAttribute('class','fa fa-star');
+                              star.setAttribute('id','rating');
+                              star.innerText= ' ' + Item.rating;
 
-                                        cardtop.appendChild(star)
-                                        cardtop.appendChild(heart)
+                              var heart= document.createElement('i');
+                              heart.setAttribute('class','fa fa-heart-o add-to-cart');
+                              heart.setAttribute('id',Item.id)
 
-                                        var img= document.createElement('img');
-                                        img.src= item.img;
+                              itemTop.appendChild(star);
+                              itemTop.appendChild(heart);
 
-                                        var itemname= document.createElement('p');
-                                        itemname.setAttribute('id', 'item-name');
-                                        itemname.innerText= item.name
+                              var img= document.createElement('img');
+                              img.src=Item.img;
+                      
+                              var itemName= document.createElement('p');
+                              itemName.setAttribute('id','item-name');
+                              itemName.innerText= Item.name;
 
-                                        var itemprice= document.createElement('p');
-                                        itemprice.setAttribute('id', 'item-price');
-                                        itemprice.innerText= item.price
+                              var itemPrice= document.createElement('p');
+                              itemPrice.setAttribute('id','item-price');
+                              itemPrice.innerText= 'Price : $ ' + Item.price;
+                      
+                              itemCart.appendChild(itemTop);
+                              itemCart.appendChild(img);
+                              itemCart.appendChild(itemName);
+                              itemCart.appendChild(itemPrice);
 
-                                        itemcart.append(cardtop);
-                                        itemcart.append(img);
-                                        itemcart.append(itemname);
-                                        itemcart.append(itemprice);
+                               Biryani.appendChild(item-cart);
 
-                                        Biryani.appendChild(itemcart);
+                             })
 
-                                    })
-                        
+                                 
+                             
 
 }
 displayItems();
